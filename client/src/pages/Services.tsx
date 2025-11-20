@@ -67,18 +67,6 @@ export default function Services() {
         "Customer analytics",
       ],
     },
-    {
-      icon: Search,
-      title: "SEO Optimization",
-      description: "Strategic search engine optimization to improve rankings and drive organic traffic to your website.",
-      features: [
-        "Keyword research and strategy",
-        "On-page optimization",
-        "Technical SEO audits",
-        "Link building campaigns",
-        "Local SEO services",
-      ],
-    },
   ];
 
   const processSteps = [

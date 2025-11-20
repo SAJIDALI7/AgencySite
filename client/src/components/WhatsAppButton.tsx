@@ -7,7 +7,7 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({ variant = "inline", className = "" }: WhatsAppButtonProps) {
-  const whatsappNumber = "1234567890";
+  const whatsappNumber = "9173157440";
   const defaultMessage = "Hi! I'm interested in your services.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
 

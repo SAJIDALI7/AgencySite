@@ -16,7 +16,7 @@ export default function Pricing() {
   const pricingTiers = [
     {
       name: "Starter",
-      price: "$2,999",
+      price: "₹3,000",
       period: "per project",
       description: "Perfect for small businesses and startups looking to establish their digital presence.",
       features: [
@@ -32,7 +32,7 @@ export default function Pricing() {
     },
     {
       name: "Professional",
-      price: "$6,999",
+      price: "₹6,000",
       period: "per project",
       description: "Ideal for growing businesses that need comprehensive digital solutions.",
       features: [
