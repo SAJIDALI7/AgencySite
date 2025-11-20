@@ -1,14 +1,9 @@
 import { Link } from "wouter";
-import { ArrowRight, Palette, Code, TrendingUp, Check } from "lucide-react";
+import { ArrowRight, Palette, Code, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import heroImage from "@assets/generated_images/Agency_workspace_hero_image_d8728eac.png";
-import portfolioImage1 from "@assets/generated_images/Portfolio_project_1_ecommerce_285ec30e.png";
-import portfolioImage2 from "@assets/generated_images/Portfolio_project_2_mobile_4944696b.png";
-import portfolioImage3 from "@assets/generated_images/Portfolio_project_3_branding_c6426fe0.png";
-import portfolioImage4 from "@assets/generated_images/Portfolio_project_4_corporate_a72c441e.png";
 
 export default function Home() {
   const services = [
@@ -31,25 +26,25 @@ export default function Home() {
 
   const featuredProjects = [
     {
-      image: portfolioImage1,
+      image: "./Portfolio_project_1_ecommerce_285ec30e.png",
       title: "E-Commerce Platform",
       category: "Web Design",
       description: "Modern shopping experience with seamless checkout",
     },
     {
-      image: portfolioImage2,
+      image: "./Portfolio_project_2_mobile_4944696b.png",
       title: "Food Delivery App",
       category: "Mobile App",
       description: "Intuitive app connecting restaurants with customers",
     },
     {
-      image: portfolioImage3,
+      image: "./Portfolio_project_3_branding_c6426fe0.png",
       title: "Brand Identity",
       category: "Branding",
       description: "Complete visual identity system for tech startup",
     },
     {
-      image: portfolioImage4,
+      image: "./Portfolio_project_4_corporate_a72c441e.png",
       title: "Corporate Website",
       category: "Web Design",
       description: "Professional site showcasing services and expertise",
@@ -68,7 +63,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={heroImage}
+            src="./Agency_workspace_hero_image_d8728eac.png"
             alt="Creative agency workspace"
             className="w-full h-full object-cover"
           />

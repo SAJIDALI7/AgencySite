@@ -3,69 +3,69 @@ import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import portfolioImage1 from "@assets/generated_images/Portfolio_project_1_ecommerce_285ec30e.png";
-import portfolioImage2 from "@assets/generated_images/Portfolio_project_2_mobile_4944696b.png";
-import portfolioImage3 from "@assets/generated_images/Portfolio_project_3_branding_c6426fe0.png";
-import portfolioImage4 from "@assets/generated_images/Portfolio_project_4_corporate_a72c441e.png";
-import portfolioImage5 from "@assets/generated_images/Portfolio_project_5_social_a59f9265.png";
-import portfolioImage6 from "@assets/generated_images/Portfolio_project_6_dashboard_2875062d.png";
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects = [
     {
-      image: portfolioImage1,
+      image: "./Portfolio_project_6_dashboard_2875062d.png",
       title: "Luxe E-Commerce Platform",
       client: "Fashion Retail Co.",
       category: "Web Design",
       tags: ["E-Commerce", "UI/UX"],
-      description: "Modern shopping experience with seamless checkout flow and personalized recommendations.",
+      description:
+        "Modern shopping experience with seamless checkout flow and personalized recommendations.",
       results: "120% increase in conversion rate",
     },
     {
-      image: portfolioImage2,
+      image: "./Portfolio_project_2_mobile_4944696b.png",
       title: "QuickBite Delivery App",
       client: "Food Tech Startup",
       category: "Mobile App",
       tags: ["Mobile", "UI/UX"],
-      description: "Intuitive food delivery app connecting restaurants with hungry customers in real-time.",
+      description:
+        "Intuitive food delivery app connecting restaurants with hungry customers in real-time.",
       results: "50K+ downloads in first month",
     },
     {
-      image: portfolioImage3,
+      image: "./Portfolio_project_3_branding_c6426fe0.png",
       title: "TechFlow Brand Identity",
       client: "Software Company",
       category: "Branding",
       tags: ["Branding", "Design"],
-      description: "Complete visual identity system including logo, colors, typography, and brand guidelines.",
+      description:
+        "Complete visual identity system including logo, colors, typography, and brand guidelines.",
       results: "40% increase in brand recognition",
     },
     {
-      image: portfolioImage4,
+      image: "./Portfolio_project_4_corporate_a72c441e.png",
       title: "Enterprise Solutions Hub",
       client: "Consulting Firm",
       category: "Web Design",
       tags: ["Web Design", "Corporate"],
-      description: "Professional corporate website showcasing services, case studies, and thought leadership.",
+      description:
+        "Professional corporate website showcasing services, case studies, and thought leadership.",
       results: "200% increase in qualified leads",
     },
     {
-      image: portfolioImage5,
+      image: "./Portfolio_project_5_social_a59f9265.png",
       title: "Social Impact Campaign",
       client: "Non-Profit Organization",
       category: "Marketing",
       tags: ["Social Media", "Marketing"],
-      description: "Comprehensive social media strategy driving awareness and engagement for social cause.",
+      description:
+        "Comprehensive social media strategy driving awareness and engagement for social cause.",
       results: "2M+ impressions, 85K engagements",
     },
     {
-      image: portfolioImage6,
+      image: "./Portfolio_project_6_dashboard_2875062d.png",
       title: "Analytics Dashboard Pro",
       client: "SaaS Platform",
       category: "Web Design",
       tags: ["Dashboard", "UI/UX"],
-      description: "Modern SaaS dashboard with real-time analytics, data visualization, and reporting tools.",
+      description:
+        "Modern SaaS dashboard with real-time analytics, data visualization, and reporting tools.",
       results: "95% user satisfaction score",
     },
   ];
@@ -85,7 +85,8 @@ export default function Portfolio() {
             Our <span className="text-primary">Portfolio</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Explore our latest projects and see how we've helped businesses achieve exceptional results.
+            Explore our latest projects and see how we've helped businesses
+            achieve exceptional results.
           </p>
         </div>
 
@@ -95,7 +96,9 @@ export default function Portfolio() {
               key={filter}
               variant={activeFilter === filter ? "default" : "outline"}
               onClick={() => setActiveFilter(filter)}
-              data-testid={`button-filter-${filter.toLowerCase().replace(/\s+/g, "-")}`}
+              data-testid={`button-filter-${filter
+                .toLowerCase()
+                .replace(/\s+/g, "-")}`}
             >
               {filter}
             </Button>
@@ -138,10 +141,16 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">{project.client}</p>
-                <p className="text-sm leading-relaxed mb-3">{project.description}</p>
+                <p className="text-sm text-muted-foreground mb-3">
+                  {project.client}
+                </p>
+                <p className="text-sm leading-relaxed mb-3">
+                  {project.description}
+                </p>
                 <div className="pt-3 border-t">
-                  <p className="text-sm font-medium text-primary">{project.results}</p>
+                  <p className="text-sm font-medium text-primary">
+                    {project.results}
+                  </p>
                 </div>
               </div>
             </Card>

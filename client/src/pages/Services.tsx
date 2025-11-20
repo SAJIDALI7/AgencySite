@@ -2,7 +2,6 @@ import { Code, Palette, TrendingUp, Smartphone, ShoppingCart, Search, ArrowRight
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import servicesHero from "@assets/generated_images/Team_collaboration_services_hero_3fef775d.png";
 import { Link } from "wouter";
 
 export default function Services() {
@@ -97,7 +96,7 @@ export default function Services() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={servicesHero}
+            src="./Team_collaboration_services_hero_3fef775d.png"
             alt="Team collaboration"
             className="w-full h-full object-cover"
           />

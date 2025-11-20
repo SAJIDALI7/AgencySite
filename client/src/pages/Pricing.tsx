@@ -9,7 +9,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import pricingHero from "@assets/generated_images/Success_results_pricing_hero_cb1dec48.png";
 import { Link } from "wouter";
 
 export default function Pricing() {
@@ -102,7 +101,7 @@ export default function Pricing() {
       <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={pricingHero}
+            src="./Success_results_pricing_hero_cb1dec48.png"
             alt="Success and growth"
             className="w-full h-full object-cover"
           />

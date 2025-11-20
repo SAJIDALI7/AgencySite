@@ -1,7 +1,6 @@
 import { Target, Users, Award, TrendingUp } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import aboutHero from "@assets/generated_images/Team_photo_about_page_191a7c70.png";
 import { Link } from "wouter";
 
 export default function About() {
@@ -73,7 +72,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={aboutHero}
+            src="./Team_photo_about_page_191a7c70.png"
             alt="Our team"
             className="w-full h-full object-cover"
           />
