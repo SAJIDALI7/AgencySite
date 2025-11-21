@@ -1,7 +1,6 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import path from 'path';
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -50,10 +49,8 @@ app.use((err: any, req: any, res: any, next: any) => {
 // Export for Vercel serverless
 export default app;
 
-// Local development only
-if (process.env.NODE_ENV === 'development') {
-  const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-}
+// Start server (for both local and production)
+const PORT:any = process.env.PORT || 3000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
